@@ -1,0 +1,319 @@
+@import url(../css/common.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+body{
+  background: #eaecc2;
+}
+h2{
+	font-family:'Binggrae';
+	font-size: 36px;
+}
+/* 비주얼 라인 //////////////////////////////////////////*/
+#slideShowon {
+	position: relative; /*부모기준설정*/
+	overflow:hidden; /*넘치는 자식 보이지않게 */
+	width: 100%;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#slideShowon .slideon ul {
+	position: absolute;
+	width: 400%; /*슬라이드가 가로방향일때만->이미지의 총가로길이(940*4)*/
+}
+
+#slideShowon .slideon ul li {
+	float: left;
+}
+
+/*하단버튼*/
+
+#slideShowon .slideon_btn {
+	position: absolute;
+	bottom: 20px;
+	left: 420px;
+}
+
+#slideShowon .slideon_btn ul li {
+	float: left;
+	background: #000;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 7px;
+	cursor: pointer;
+}
+
+#slideShowon .slideon_btn ul li.activeon {
+	background: #ff6600;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+/*Play,Stop 버튼*/
+#slideShowon .playstopon .stopon {
+	position: absolute;
+	bottom: 20px;
+	left: 520px;
+	width: 8px;
+	height: 11px;
+	background: url(../image/btn_pause.png) no-repeat;
+}
+
+#slideShowon .playstopon .playon {
+	position: absolute;
+	bottom: 20px;
+	left: 520px;
+	width: 8px;
+	height: 11px;
+	background: url(../image/btn_play.png) no-repeat;
+}
+
+/* 섹션 라인///////////////////////////////////////////// */
+section{}
+
+/* content1 커피////////////////////////////////////// */
+.bg_coffee{
+	width: 100%;
+	background:url(../image/coffee_background1.jpg) no-repeat;
+	background-size: cover;
+}
+.ice_coffee{
+	margin: 0 auto;
+	width:1200px;
+	position: relative;
+}
+#coffee_gallery{ 
+	width:250px;
+	height:450px;
+	padding:20px 20px 70px; 
+	border:solid 1px #ccc;
+	background:#F2E2CE;
+	position:relative;
+	overflow:hidden; /*부모영역넘어간 자식숨김*/
+}
+#largeImg{
+	position:absolute;
+	width:1350px;  /*전체총길이(가로폭1000px*4+오른쪽여백20px*4)*/
+}
+#largeImg img{ 
+	float:left;
+	margin-right:20px;
+}
+
+.thumbs{
+	position:absolute;
+	left:20px;
+	bottom:20px;	
+}
+.thumbs a{ /* 버튼 */
+	display:inline-block;
+	padding:5px 5px;
+	margin: 5px;
+	border:dotted 1px #888;
+	background:#F2D43D;
+	color:#111;
+}
+.thumbs a:hover{   /* 버튼오버 */
+	background:#0D0504;
+	color:#cff;;
+}
+/* 커피 버튼과 텍스트 */
+.coffee_btn{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: rgba(242, 225, 205, 0.5);
+	border-radius: 50%;
+	position: absolute;
+	bottom:10px;
+	right:50px;
+	transition: all 0.3s;
+}
+.coffee_btn .finger{
+	font-size: 50px;
+	color: #40281A;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.coffee_btn:hover{
+	background: url(../image/icon_ceo_paik1.png);
+	background-size: cover;
+	opacity: 1;
+	box-shadow: 0px 0px 10px #F2D43D,
+							0px 0px 20px #F2D43D,
+							0px 0px 60px #F2D43D;
+}
+.coffee_btn:hover .finger{
+	opacity: 0;
+}
+.coffee_txt{
+	position: absolute;
+	top:80px;
+	right:30px;
+}
+.coffee_txt>h2{color: #40281A;}
+.coffee_txt>p{
+	width: 250px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #111;
+	margin-top: 20px;
+}
+
+/* content2 */
+.content2{
+	width: 1200px;
+	margin: 0 auto;
+}
+/* content2 빽스치노//////////////////////////////////// */
+.paik_ccino{
+	width: 600px;
+	height: 473px;
+	float: left;
+	background: url(../image/paik_ccino_background1.png) no-repeat;
+	position: relative;
+}
+.ccino_btn{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: rgba(159, 196, 163, 0.5);
+	border-radius: 50%;
+	position: absolute;
+	bottom:10px;
+	right:50px;
+	transition: all 0.3s;
+}
+.ccino_btn .finger_c{
+	font-size: 50px;
+	color: #B88035;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.ccino_btn:hover{
+	background: url(../image/icon_ceo_paik1.png);
+	background-size: cover;
+	opacity: 1;
+	box-shadow: 0px 0px 10px #F2D43D,
+							0px 0px 20px #F2D43D,
+							0px 0px 60px #F2D43D;
+}
+.ccino_btn:hover .finger_c{
+	opacity: 0;
+}
+.ccino_txt{
+	position: absolute;
+	top:50px;
+	left:30px;
+}
+.ccino_txt>h2{
+	color: #f3d021;
+	text-shadow: 0px 0px 10px #000,
+								0px 0px 30px #f3d021;
+}
+.ccino_txt>p{
+	width: 250px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #111;
+	margin-top: 20px;
+}
+
+/* content3 디저트//////////////////////////////////// */
+.dessert{
+	width: 600px;
+	height: 473px;
+	float: left;
+	background: url(../image/dessert_background1.png) no-repeat;
+	position: relative;
+	background-color: #ff6600;
+}
+.dessert_btn{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: rgba(197, 77, 43, 0.5);
+	border-radius: 50%;
+	position: absolute;
+	bottom:10px;
+	right:50px;
+	transition: all 0.3s;
+}
+.dessert .finger_d{
+	font-size: 50px;
+	color: #F1DF9F;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.dessert_btn:hover{
+	background: url(../image/icon_ceo_paik1.png);
+	background-size: cover;
+	opacity: 1;
+	box-shadow: 0px 0px 10px #F2D43D,
+							0px 0px 20px #F2D43D,
+							0px 0px 60px #F2D43D;
+}
+.dessert_btn:hover .finger_d{
+	opacity: 0;
+}
+.dessert_txt{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+.dessert_txt>h2{color: #F1DF9F;}
+.dessert_txt>p{
+	width: 250px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #111;
+	margin-top: 20px;
+}
+
+.coffee_class{
+	width:1200px;
+	height: 150px;
+	float: left;
+	background: url(../image/coffe_class_img.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+.coffee_class>h3{
+	font-size: 39px;
+	color: #e2a94d;
+	transition: all 0.3s;
+}
+.tab_box{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.tab_btn{
+	text-align: center;
+	transition: all 0.3s;
+}
+.tab_btn>p{color: #FCF4E7;}
+.tab_btn>a>.adg{
+	color: #FCF4E7;
+	font-size: 52px;
+}
+.tab_btn>a:hover>.adg{
+	text-shadow:0 0 10px #FCF4E7,
+							0 0 30px #F2E2CE,
+							0 0 50px #F2D43D;
+}
+
+.coffee_class:hover>h3{
+	background-color: rgba(197, 77, 43, 0.4);
+	width: 1200px;
+}

@@ -1,0 +1,86 @@
+footer{
+  border-top:3px solid #F2D43D;
+  background: #dae8ee;
+  width:100%;
+  color: #262626;
+}
+.footer_top{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+}
+.footer_in{
+	width:150px;
+	position:relative;
+  right: 10px;
+	margin:0px auto;
+  box-shadow: 3px 3px 3px #333;
+}
+.footer_logo{
+  position: absolute;
+  top: 80px;
+  right:20px;
+}
+.footer_logo>img{width:200px}
+
+/* familysite */
+.footer_in dl{
+	position:absolute;
+	top:0px;
+	left:550px;
+}
+.footer_in dl dt{cursor:pointer;}
+
+.footer_in dl dd{ /*셀렉트 목록부분*/
+	display:none;
+	position:absolute;
+	bottom:100%;
+	top:-260px;  /*목록버튼 클릭시 나오는 목록의 처음 위치를 설정함*/
+	left:5px;
+	background:#f6f6f6;
+	width:110px;
+	border:#c5c5c5 solid;
+	border-width:1px 1px 0 1px;	
+}
+.footer_in dl dd ul li{
+	line-height:17px;
+	padding-left:10px;
+}
+.footer_in dl dd ul li a{
+	color:#666;
+	font-size:11px;
+}
+.footer_in dl dd ul li a:hover{
+	color:#000;
+	font-weight:bold;
+}
+
+.footer_middle{
+  width:1200px;
+  margin:0 auto;
+}
+.footer_middle ul{
+  width: 580px;
+  text-align: center;
+}
+.footer_middle ul li{
+  float: left;
+  padding:0 10px;
+  margin: 5px 0;
+  border-right: 1px solid #333;
+}
+
+.footer_middle ul li:nth-child(3){border:0;}
+.footer_middle ul li:nth-child(5){border:0;}
+.footer_middle ul li:last-child{border:0;}
+.footer_bottom{
+  width:1200px;
+  text-align: left;
+}
+address{
+  font-style: normal;
+  width: 580px;
+  padding: 10px;
+}

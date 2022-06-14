@@ -1,0 +1,152 @@
+@import url(../css/common.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sub03_visual.css);
+
+body{
+  background: #eaecc2;
+}
+h2{
+	font-family:'Binggrae';
+	font-size: 36px;
+}
+h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 28px;
+  color: #071F60;
+}
+/* 콘텐츠 */
+section{
+  background-color: rgb(239, 241, 202);
+  padding-bottom: 30px;
+}
+
+.news_content{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.news_T{
+  width: 1200px;
+  margin: 50px 0;
+  border: 3px solid #071F60;
+  border-radius: 30px;
+}
+.news_title{
+  font-size: 28px;
+  padding: 20px 0;
+  font-weight:bold;
+  color:#071F60;
+}
+
+.news_content h3{
+  padding: 20px;
+}
+.box_sub>img, .box3_sub>img, .box4_sub>img{width:500px;}
+.news_content>h3{font-size: 36px;}
+.news_box1, .news_box3{
+  position: relative;
+  margin: 50px;
+  width:500px;
+  float: left;
+  overflow: hidden;
+}
+.news_box2, .news_box4{
+  position: relative;
+  margin: 50px;
+  width:500px;
+  float: right;
+  overflow: hidden;
+}
+.news_box3, .news_box4{overflow: hidden;}
+.box_sub{
+  height: 100%;
+  overflow: hidden;
+}
+.title_deco{
+  position:absolute;
+  bottom: 0;
+  width: 500px;
+  height: 0;
+  text-align: center;
+  color: #eaecc2;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.title_deco2, .title_deco3{
+  position:absolute;
+  bottom: 0;
+  width: 500px;
+  height: 0;
+  text-align: center;
+  color: #eaecc2;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.date_cast{
+  float: left;
+  font-size: 24px;
+  line-height: 100px;
+  margin-left: 20px;
+}
+.btn_cast{
+  width:200px;
+  float: right;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 30px;
+  background-color: #071F60;
+  color: #eaecc2;
+}
+.btn_cast:hover{
+  background: #F2D43D;
+  color: #222;
+}
+.box_sub:hover .title_deco{
+  width: 500px;
+  height: 100px;
+  opacity: 1;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box_sub:hover .title_deco2{
+  width: 500px;
+  height: 350px;
+  bottom: 0;
+  opacity: 1;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box_sub:hover .title_deco3{
+  width: 500px;
+  height: 250px;
+  bottom: 0;
+  opacity: 1;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box_inTxt{
+  padding: 30px;
+}
+
+.add_news{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #071F60;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+section>a{
+  width: 600px;
+  font-size: 15px;
+  color: #eaecc2; 
+}
+.add_news:hover{
+  background: #F2D43D;
+}
+section>a:hover{color:#222;}
+
+

@@ -1,0 +1,164 @@
+@import url(../css/common.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+body{
+  background: #eaecc2;
+}
+h2{
+	font-family:'Binggrae';
+	font-size: 36px;
+}
+h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 26px;
+  color: #071F60;
+}
+/* 비주얼 라인 //////////////////////////////////////////*/
+.visual{
+  width:100%;
+  height:400px;
+  background:url(../image/sub01_visual01.png)no-repeat fixed;
+}
+.top_visual{
+  width:1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.top_visual h2{
+  padding-top:60px;
+  color: #001C55;
+}
+.top_visual p{
+  font-size: 21px;
+  font-weight: bold;
+  color: #111;
+  padding: 50px;
+}
+.sub01_TopBTN{
+  text-align: center;
+}
+.sub01_TopBTN ul{
+  width:300px;
+  margin:0 auto;
+}
+.sub01_TopBTN ul li{
+  float: left;
+  border: 1px solid rgb(109, 108, 108);
+  padding: 10px 30px;
+  margin-left: 5px;
+  margin-top: 50px;
+  transition: all 0.4s;
+}
+.sub01_TopBTN ul li>a{
+  color:rgb(109, 108, 108);
+  transition: all 0.4s;
+}
+.active{background:#F2D43D;}
+.sub01_TopBTN ul .active>a{color:#000;}
+.sub01_TopBTN ul li:hover{background-color:#F2D43D;}
+.sub01_TopBTN ul li:hover>a{color:#000;}
+/* 섹션 라인///////////////////////////////////////////// */
+section{
+  background-color: rgb(239, 241, 202);
+  padding-bottom: 30px;
+}
+.top_Txtimg{
+  width: 1200px;
+  margin: 0px auto 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* CEO 이미지 */
+.ceo_Img{
+  padding-top: 80px;
+  width:700px;
+  height: 681px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.ceo_Img>img{
+  width:700px;
+}
+.grid_Con{
+  width:1200px;
+  margin:0 auto;
+}
+.ceo_profile{
+  width: 700px;
+  line-height:25px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.ceo_profile dt{
+  width: 200px;
+  float: left;
+  padding-left: 10px;
+  letter-spacing: -1px;
+  color: antiquewhite;
+}
+.ceo_profile dd{float:right;}
+.ceo_profile dd ul li{
+  width: 400px;
+  padding-left: 10px;
+  letter-spacing: -1px;
+  list-style-type:disc;
+  color: antiquewhite;
+}
+
+/* CEO 인사말 */
+.ceo_gridtext{
+  display: inline-block;
+  width: 500px;
+  float: right;
+}
+
+.ceo_gridtext h3{
+  font-size: 26px;
+  color: #071F60;
+  padding: 0px 20px 15px;
+}
+
+.ceo_gridtext span{
+  width: 650px;
+  height: 1px;
+  margin-left:-50px;
+  border-top: 2px solid #001C55;
+  display: inline-block;
+}
+
+.ceo_gridtext>p{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #222;
+  padding: 15px 20px;
+}
+.ceo_gridtext>p>strong{
+  font-size: 17px;
+}
+.simbol_txt{
+  margin-left: 20px;
+  width: 190px;
+  float: left;
+  text-align: left;
+}
+.simbol_txt>p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.simbol_txt>h4{
+  font-size: 32px;
+  text-align: right;
+}
+.sign_img{
+  float: left;
+  margin-left: 30px;
+  transition: all 1s;
+  opacity: 0;
+}
+.sign_img>img{width: 150px;}
+
+.ceo_gridtext:hover .sign_img{opacity: 1;}

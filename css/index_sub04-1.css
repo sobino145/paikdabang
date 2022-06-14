@@ -1,0 +1,106 @@
+@import url(../css/common.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/sub04_visual.css);
+
+body{
+  background: #eaecc2;
+}
+h2{
+	font-family:'Binggrae';
+	font-size: 36px;
+}
+h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 28px;
+  color: #071F60;
+}
+/* 콘텐츠 */
+section{
+  background-color: rgb(239, 241, 202);
+  padding-bottom: 30px;
+}
+.coffee_Class_Con{
+  width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+.coffee_Class_Con>h3{
+  margin: 20px;
+}
+.middle_line{
+  width: 1000px;
+  margin: 50px auto;
+  line-height: 60px;
+  display: flex;
+}
+.btn_month{
+  font-size: 24px;
+  font-weight: 700;
+  margin:0 20px;
+  color: #222;
+}
+.date_point{
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+.stay_view{
+  position: relative;
+  top: 5px;
+  left: 350px;
+}
+.stay_txt{
+  position: absolute;
+  left:0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #071F60;
+  color: #eaecc2;
+}
+.view_txt{
+  position: absolute;
+  left:0px;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #F2D43D;
+  color: #222;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.stay_view:hover .view_txt{
+  left:52px;
+  opacity: 1;
+}
+
+.Class_intro{
+  margin: 50px;
+}
+.coffee_Class_Con a{
+  width: 600px;
+  font-size: 15px;
+  color: #eaecc2; 
+}
+.coffee_Class_Con a .add_CCon{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #071F60;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.coffee_Class_Con a:hover{
+  color:#222;
+}
+.coffee_Class_Con a .add_CCon:hover{
+  background: #F2D43D;
+}
